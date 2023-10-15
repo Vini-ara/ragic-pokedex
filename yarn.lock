@@ -11202,6 +11202,7 @@ __metadata:
     "@types/styled-components": ^5.1.28
     axios: ^1.5.1
     prettier: ^3.0.3
+    ragic: ^0.0.3
     react: ^18.2.0
     react-dom: ^18.2.0
     react-query: ^3.39.3
@@ -11211,6 +11212,13 @@ __metadata:
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft
+
+"ragic@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "ragic@npm:0.0.3"
+  checksum: 7925dc0a61b21ca8b1a9e0751a3659589467cf36f70e00ef5246157ba9e1c3b5d108f3efa52b4cc9ef7a1194158d7a3313a2e3a9436b17aeed762eddf90f75fe
+  languageName: node
+  linkType: hard
 
 "randombytes@npm:^2.1.0":
   version: 2.1.0

@@ -5,6 +5,7 @@ import { PageContent } from "../components/PageContent"
 import { PageTitle } from "../components/PageTitle"
 import { PokeCard } from "../components/PokeCard"
 import { PokelistContainer } from "../components/PokelistContainer"
+import { Link } from "../routes"
 
 export const ListAllPokemonPage = () => {
   const data = useAllPokemon()
@@ -18,7 +19,11 @@ export const ListAllPokemonPage = () => {
             <Loading />
           ) : (
             data.map((pokemon) => (
+              // Nao to conseguindo referenciar a rota pokemon/:pokemonId aqui,
+              // parece que não existe
+              //<Link to="/pokemon/:pokemonId" params={{ pokemonId: pokemon.id }}>
               <PokeCard pokemon={pokemon} key={pokemon.name} />
+              //</Link>
             ))
           )}
         </PokelistContainer>

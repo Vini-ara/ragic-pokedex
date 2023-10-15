@@ -6,15 +6,12 @@ import { PageTitle } from "../components/PageTitle"
 import { PokeCard } from "../components/PokeCard"
 import { PokelistContainer } from "../components/PokelistContainer"
 import { TypeBadge } from "../components/TypeBadge"
+import { useRouteParams } from "../routes"
 
 export const ListPokemonByTypePage = () => {
-  // get id of type being viewd from route
-  // get id of type being viewd from route
-  const typeId = 3
-  // get id of type being viewd from route
-  // get id of type being viewd from route
+  const { type_id: typeId } = useRouteParams("/type/:type_id")
 
-  const { name, pokemon } = usePokemonByType(typeId)
+  const { name, pokemon } = usePokemonByType(+typeId)
 
   return (
     <>
